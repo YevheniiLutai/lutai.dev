@@ -1,0 +1,13 @@
+const fs = require('fs');
+
+// Read the JSON file
+const json = fs.readFileSync('./cloudinary-manifest.json');
+
+// Parse the JSON
+const data = JSON.parse(json);
+
+// Extract the "url" keys from the data object
+const urls = Object.keys(data).map(key => data[key].url);
+
+// Write the URLs to a new text file
+fs.writeFileSync('./file.txt', urls.join('\n'));

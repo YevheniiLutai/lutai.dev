@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Yevhenii Lutai</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680036010/lutai.dev/favicon-3_tgtkvv.png" />
+  <meta property="og:image" content="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081617/lutai.dev/facebook3.webp" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+  <div id="page-wrapper" data-theme="light">
+
+    <script>
+      // Check local storage
+      let localS = localStorage.getItem('theme'),
+          themeToSet = localS;
+      
+      console.log(themeToSet)
+      console.log(window.matchMedia('(preferce-color-scheme: dark)'))
+      // If local Storage is not set, we check the OS preference 
+      if (!localS) {
+        themeToSet = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      console.log(themeToSet)
+      // Set the correct theme  
+      document.getElementById('page-wrapper').setAttribute('data-theme', themeToSet); 
+    </script>
+
+    <section class="hat">
+      <div class="container">
+        <div class="hat__block">
+          <div class="hat__logo">
+            <img class="hat__logo-light" 
+            src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680083944/lutai.dev/Yevhenii_lutai-light.svg" 
+            alt="hat-logo-light">
+            <img class="hat__logo-dark" 
+            src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680083551/lutai.dev/Yevhenii_lutai-dark.svg" 
+            alt="hat-logo-dark">
+          </div>
+          <div class="hat__wrap">
+            <div id="switch-theme" class="hat__swipe_theme" title="You can switch theme">
+              <img class="hat__swipe_theme-light" 
+              src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023452/lutai.dev/Dark-Light.svg" 
+              alt="hat-swipe-theme-light">
+              <img class="hat__swipe_theme-dark" 
+              src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023450/lutai.dev/Dark-Light_-_dark.svg" 
+              alt="hat-swipe-theme-dark">
+            </div>
+            <div class="hat__items">
+              <a class="hat__name" href="#scroll-about">
+                about
+              </a>
+              <a class="hat__name ml-0" href="#scroll-contact">
+                contact
+              </a>
+              <div class="dropdown">
+                <p class="hat__name mr-0 ml-0 dropbtn">
+                  projects
+                </p>
+                <div class="hat__dropdown-content">
+                  <a href="#">Project 1</a>
+                  <a href="#">Project 2</a>
+                  <a href="#">Project 3</a>
+                  <a href="#">Project 4</a>
+                  <a href="#">Project 5</a>
+                  <a href="#">Project 6</a>
+                </div>
+              </div>
+            </div>
+            <div class="hat__sandwich">
+              <div class="hat__sandwich-lines">
+                <input type="checkbox" id="menu_checkbox">
+                <label for="menu_checkbox">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </label>
+                <div class="hat__sandwich-block">
+                  <a href="#scroll-about" class="hat__text">about</a>
+                  <a href="#scroll-contact" class="hat__text">contact</a>
+                  <p class="hat__text hat__text_2">
+                    projects:
+                  </p>
+                  <ul class="hat__list">
+                    <li><a href="#" class="hat__link">Project 1</a></li>
+                    <li><a href="#" class="hat__link">Project 2</a></li>
+                    <li><a href="#" class="hat__link">Project 3</a></li>
+                    <li><a href="#" class="hat__link">Project 4</a></li>
+                    <li><a href="#" class="hat__link">Project 5</a></li>
+                    <li class="mb-0"><a href="#" class="hat__link">Project 6</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <div id="particles-js"></div> 
+      <!-- stats - count particles --> 
+      <div class="count-particles"></div>
+      <div class="container">
+        <h2 class="header__title">
+          Welcome to my site
+          <br>I'm Frontend Developer
+          <br>The website is currently
+          <br>under development
+        </h2>
+        <div class="header__line"></div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title">
+          Error...
+          <br> 
+          The text didn't load... 
+          <br>
+          Whyyy???
+        </h2>
+        <p class="about__des">
+          I have two years of commercial experience in web development and a four-year university
+          background in software engineering, where I learned multiple programming languages such as
+          C++, Java, and Python. Additionally, I have experience working with web development
+          technologies such as JavaScript, HTML, CSS, and PHP. I excel in creating landing pages and
+          websites with strong attention to detail.
+        </p>
+        <!-- <a href="https://drive.google.com/uc?id=1TUNEzCNQIQd2cuta_O68FZfGpSdt8qe2&export=download" download>
+          <div class="about__download-block" id="about__download-cv">
+              <p class="about__download-text">
+                View my CV
+              </p>
+              <div class="about__download-icon">
+                <img class="d-light"
+                src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430610/lutai.dev/download-light.svg" 
+                alt="#">
+                <img class="d-dark"
+                src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430608/lutai.dev/download-dark.svg" 
+                alt="#">
+              </div>
+          </div>
+        </a> -->
+        <div class="row align-items-xl-center">
+          <div class="col-12 col-xl-5">
+            <div class="about__wrap">
+              <p class="about__name">
+                Experience
+              </p>
+              <div class="about__items">
+                <div class="about__nav">
+                  <input type="checkbox" name="group1" id="checkbox1">
+                  <div class="about__icon">
+                    <img class="d-light" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081133/lutai.dev/Up.svg" 
+                    alt="#">
+                    <img class="d-dark" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081131/lutai.dev/Up-light.svg" 
+                    alt="#">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__block about__block_1">
+              <p class="about__block-name">
+                JUNIOR FRONT-END DEVELOPER
+              </p>
+              <p class="about__block-text">
+                CIENCE Technologies | 09/2021 - Present,
+              </p>
+              <ul class="about__block-list">
+                <li class="mb-1">Developing responsive websites and landing pages using HTML, CSS, and JavaScript.</li>
+                <li class="mb-1">Creating web pages and modules in HubSpot using HubL and other HubSpot tools.</li>
+                <li class="mb-1">Building JavaScript functions for client-side interactions and working with various APIs to integrate third-party services</li>
+                <li>Designing and developing professional email signatures using HTML and CSS.</li>
+              </ul>
+              <p class="about__block-name">
+                INTERN SOFTWARE DEVELOPER
+              </p>
+              <p class="about__block-text">
+                Revenue Grid | 07/2021 - 09/2021,
+              </p>
+              <ul class="about__block-list">
+                <li class="mb-1">Developing Logic Apps in Microsoft Azure to create scalable and resilient workflows that integrate with various systems and services, such as Salesforce</li>
+                <li>Building JavaScript functions for Logic Apps to perform custom actions and manipulate data within Logic Apps workflows.</li>
+              </ul>
+              <p class="about__block-name">
+                POS MEDIA UKRAINE
+              </p>
+              <p class="about__block-text">
+                Information handler | 11/2019 - 06/2021,
+              </p>
+              <ul class="about__block-list mb-0">
+                <li class="mb-1">Selected information material on topics specified by customers</li>
+                <li>Collected, systematized information material by order numbers</li>
+              </ul>
+            </div>
+            <div class="about__line"></div>
+            <div class="about__wrap">
+              <p class="about__name">
+                Skills
+              </p>
+              <div class="about__items">
+                <div class="about__nav">
+                  <input type="checkbox" name="group1" id="checkbox2">
+                  <div class="about__icon">
+                    <img class="d-light" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081133/lutai.dev/Up.svg" 
+                    alt="#">
+                    <img class="d-dark" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081131/lutai.dev/Up-light.svg" 
+                    alt="#">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__block about__block_2">
+              <ul class="about__block-list">
+                <li class="mb-1">JavaScript, TypeScript</li>
+                <li class="mb-1">React, Redux, Rest API, JSON</li>
+                <li class="mb-1">HTML, CSS, SCSS, Bootstrap, Tailwind CSS</li>
+                <li class="mb-1">Figma, Git, GULP</li>
+                <li>Azure Microsoft(Logic Apps)</li>
+              </ul>
+            </div>
+            <div class="about__line"></div>
+            <div class="about__wrap">
+              <p class="about__name">
+                Educations
+              </p>
+              <div class="about__items">
+                <div class="about__nav">
+                  <input type="checkbox" name="group1" id="checkbox3">
+                  <div class="about__icon">
+                    <img class="d-light" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081133/lutai.dev/Up.svg" 
+                    alt="#">
+                    <img class="d-dark" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081131/lutai.dev/Up-light.svg" 
+                    alt="#">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__block about__block_3">
+              <p class="about__block-name">
+                BACHELOR'S DEGREE - SOFTWARE ENGINEER
+              </p>
+              <p class="about__block-text mb-4">
+                NTUU "IGOR SIKORSKY KYIV POLYTECHNIC INSTITUTE" | 09/2017 - 06/2021,
+              </p>
+              <!--          <div class="about__download-block" id="about__download-diploma">
+                <p class="about__download-text">
+                  Download my diploma!
+                </p>
+                <div class="about__download-icon">
+                  <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430610/lutai.dev/download-light.svg" 
+                  alt="#">
+                </div>
+              </div> -->
+              <p class="about__block-name">
+                SECONDARY SCHOOL
+              </p>
+              <p class="about__block-text mb-0">
+                KYIV POLYTECHNIC LYCEUM OF NTUU “KPI” | 09/2012 - 06/2017/
+              </p>
+            </div>
+            <div class="about__line"></div>
+            <div class="about__wrap">
+              <p class="about__name about__name_4">
+                CERTIFICATES
+              </p>
+              <div class="about__items">
+                <div class="about__nav">
+                  <input type="checkbox" name="group1" id="checkbox4">
+                  <div class="about__icon">
+                    <img class="d-light" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081133/lutai.dev/Up.svg" 
+                    alt="#">
+                    <img class="d-dark" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081131/lutai.dev/Up-light.svg" 
+                    alt="#">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__block about__block_4">
+              <p class="about__block-name">
+                SOFTSERVE. JAVASCRIPT FUNDAMENTALS | 10/2020 - 12/2020
+              </p>
+              <p class="about__block-text mb-4">
+                Series LV №4011/2020, https://career.softserveinc.com/en-us/certification/verification
+              </p>
+              <!--               <div class="about__download-block" id="about__download-cerf1">
+                <p class="about__download-text">
+                  Download!
+                </p>
+                <div class="about__download-icon">
+                  <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430610/lutai.dev/download-light.svg" 
+                  alt="#">
+                </div>
+              </div> -->
+              <p class="about__block-name">
+                Project Management: The Basic for Success by University of California, Irvine on
+              </p>
+              <p class="about__block-text mb-4">
+                Coursera | 03/2020 - 04/2020
+              </p>
+              <!-- <div class="about__download-block" id="about__download-cerf2">
+                <p class="about__download-text">
+                  Download!
+                </p>
+                <div class="about__download-icon">
+                  <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430610/lutai.dev/download-light.svg" 
+                  alt="#">
+                </div>
+              </div> -->
+              <p class="about__block-name">
+                Fundamentals of Project Planning and Management by University of Virginia on
+              </p>
+              <p class="about__block-text">
+                Coursera | 03/2020 - 04/2020
+              </p>
+              <!-- <div class="about__download-block mb-0" id="about__download-cerf3">
+                <p class="about__download-text">
+                  Download!
+                </p>
+                <div class="about__download-icon">
+                  <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680430610/lutai.dev/download-light.svg" 
+                  alt="#">
+                </div>
+              </div> -->
+            </div>
+            <div class="about__line"></div>
+            <div class="about__wrap about__wrap-last">
+              <p class="about__name about__name_5">
+                PERSONAL PROJECTS & <br class="d-xl-none">ACHIEVEMENTS
+              </p>
+              <div class="about__items">
+                <div class="about__nav">
+                  <input type="checkbox" name="group1" id="checkbox5">
+                  <div class="about__icon">
+                    <img class="d-light" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081133/lutai.dev/Up.svg" 
+                    alt="#">
+                    <img class="d-dark" 
+                    src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680081131/lutai.dev/Up-light.svg" 
+                    alt="#">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__block about__block_5">
+              <p class="about__block-name">
+                BACHELOR WORK | 12/2020 - 06/2021
+              </p>
+              <ul class="about__block-list">
+                <li class="mb-2">A web application was developed to account for and analyze the state of personnel support</li>
+                <li class="mb-2">Existing document processing methods were analyzed</li>
+                <li>Developed a method to create an annual automatic report depending on the added documents</li>
+              </ul>
+              <p class="about__block-name">
+                IT CONFERENCE | 05/2017
+              </p>
+              <ul class="about__block-list">
+                <li class="mb-1">Helped in organizing an IT conference, which was attended by 80 people</li>
+                <li class="mb-1">I was one of the speakers</li>
+                <li>Video: https://youtu.be/Np0_cTyqYPw</li>
+              </ul>
+              <p class="about__block-name">
+                INTEL ISEF | 10/2016
+              </p>
+              <p class="about__block-text">
+                Participated in Intel ISEF 2016, took 4th place with the team in section "Robotics and intelligent machines" with the project "W2C (Wireless Control Computer)".
+              </p>
+            </div>
+            <div class="about__line about__line-last mb-0"></div>
+          </div>
+          <div class="col-12 col-xl-5 offset-xl-1">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="examples">
+      <div class="container">
+        <div class="row align-items-xl-center block">
+          <div class="col-12 col-xl-5">
+            <div class="examples_1">
+              <div class="examples__img_1">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680016071/lutai.dev/img-test.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680016072/lutai.dev/img-test_2x.webp 2x"
+                alt="examples-img-1">
+              </div>
+              <div class="examples__wrap">
+                <p class="examples__num">
+                  1
+                </p>
+                <p class="examples__name">
+                  Project
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-5 offset-xl-1">
+            <div class="examples_2">
+              <div class="examples__img_2">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680016069/lutai.dev/img-test-2.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680016070/lutai.dev/img-test-2_2x.webp 2x"
+                alt="examples-img-2">
+              </div>
+              <div class="examples__wrap">
+                <p class="examples__num">
+                  2
+                </p>
+                <p class="examples__name">
+               Project
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-xl-center block">
+          <div class="col-12 col-xl-4 offset-xl-1">
+            <div class="examples_3">
+              <div class="examples__img_3">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023463/lutai.dev/test-img-3.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023464/lutai.dev/test-img-3_2x.webp 2x"
+                alt="examples-img-3">
+              </div>
+              <div class="examples__wrap">
+                <p class="examples__num">
+                  3
+                </p>
+                <p class="examples__name">
+                  Project
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-5 offset-xl-2">
+            <div class="examples_4">
+              <div class="examples__img_4">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023465/lutai.dev/test-img-4.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023466/lutai.dev/test-img-4_2x.webp 2x"
+                alt="examples-img-4">
+              </div>
+              <div class="examples__wrap">
+                <p class="examples__num">
+                  4
+                </p>
+                <p class="examples__name">
+                 Project
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-xl-center">
+          <div class="col-12 col-xl-5">
+            <div class="examples_5">
+              <div class="examples__img_5">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023467/lutai.dev/test-img-5.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023468/lutai.dev/test-img-5_2x.webp 2x"
+                alt="examples-img-5">
+              </div>
+              <div class="examples__wrap">
+                <p class="examples__num">
+                  5
+                </p>
+                <p class="examples__name">
+                  Project
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 offset-xl-1">
+            <div class="examples_6">
+              <div class="examples__img_6">
+                <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023469/lutai.dev/test-img-6.webp" 
+                srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680023470/lutai.dev/test-img-6_2x.webp 2x"
+                alt="examples-img-6">
+              </div>
+              <div class="examples__wrap mb-0">
+                <p class="examples__num">
+                  6
+                </p>
+                <p class="examples__name">
+                  Project
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="contact__title">
+          Contact me:
+        </h2>
+        <div class="row align-items-xl-center">
+          <div class="col-12 col-xl-5 order-2 order-xl-1">
+            <!-- contact form -->
+            <form id="myForm">
+              <!-- name -->
+              <div class="form-group">
+                <p for="name" class="contact__name">:Your name</p>
+                <input
+                  type="name"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="enter your name"
+                  required
+                />
+              </div>
+  
+              <!-- email -->
+              <div class="form-group">
+                <p for="email" class="contact__name">:Email</p>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="enter your email"
+                  required
+                />
+              </div>
+  
+              <!-- company name -->
+              <div class="form-group">
+                <p for="company_name" class="contact__name">:Company name</p>
+                <input
+                  type="text"
+                  name="company_name"
+                  class="form-control"
+                  id="company_name"
+                  placeholder="Company name"
+                />
+              </div>
+
+              <!-- phone number -->
+              <div class="form-group">
+                <p for="phone_number" class="contact__name">:Phone Number</p>
+                <input
+                  type="number"
+                  name="phone_number"
+                  class="form-control"
+                  id="phone_number"
+                  placeholder="Phone Number"
+                />
+              </div>
+  
+              <div class="form-group">
+                <p for="message" class="contact__name">:Message</p>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+  
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-12 col-xl-5 offset-xl-1 order-1 order-xl-2">
+            <div class="contact__img">
+              <img src="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680041895/lutai.dev/me_2x.webp" 
+              srcset="https://res.cloudinary.com/dyknbpn1j/image/upload/v1680041895/lutai.dev/me_2x.webp 2x"
+              alt="img-me">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container text-center text-xl-left">
+        <div class="footer__block">
+          <p class="footer__text">
+            lutai.dev
+          </p>
+          <div class="footer__wrap">
+            <a href="https://www.linkedin.com/in/yevhenii-lutai/" class="footer__name" target="_blank">
+              Linkedin
+            </a>
+            <a class="footer__name">
+              GITHUB
+            </a>
+            <a href="https://www.instagram.com/yevhenii.lutai/" class="footer__name footer__name_3 mb-0" target="_blank">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scrollBtnToTop"></button>
+
+  </div>
+
+  <!-- libs  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("dz42iRrfiNNTzG5eD");
+    })();
+  </script>
+  <script>
+    // listen to the form submission
+    document
+      .getElementById("myForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = "service_bqtpfmc";
+        const templateID = "template_b3t5e05";
+
+        // send the email here
+        emailjs.sendForm(serviceID, templateID, this).then(
+          (response) => {
+            console.log("Success!", response.status, response.text);
+            alert("Success!");
+          },
+          (error) => {
+            console.log("Failed...", error);
+            alert("Failed...", error);
+          }
+        );
+      });
+  </script>
+  <!-- -->
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- stats.js lib --> 
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <!-- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+My code:
+-----------------------------------------------------------------------
+const checkbox1 = document.querySelector('#checkbox1'),
+      checkbox2 = document.querySelector('#checkbox2'),
+      checkbox3 = document.querySelector('#checkbox3'),
+      checkbox4 = document.querySelector('#checkbox4'),
+      checkbox5 = document.querySelector('#checkbox5');
+
+const aboutBlock1 = document.querySelector('.about__block_1'),
+      aboutBlock2 = document.querySelector('.about__block_2'),
+      aboutBlock3 = document.querySelector('.about__block_3'),
+      aboutBlock4 = document.querySelector('.about__block_4'),
+      aboutBlock5 = document.querySelector('.about__block_5');
+
+function displayBlock (aboutBlock, checkboxt) {
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          checkboxes.forEach(otherCheckbox => {
+            if (otherCheckbox !== checkbox) {
+              otherCheckbox.checked = false;
+              aboutBlock.style.display = 'none';
+            }
+          });
+        });
+      });
+    checkboxt.addEventListener('change', function() {
+        if (this.checked) {
+          aboutBlock.style.display = 'block';
+        } else {
+          aboutBlock.style.display = 'none';
+        }
+    });
+};
+
+displayBlock(aboutBlock1, checkbox1);
+displayBlock(aboutBlock2, checkbox2);
+displayBlock(aboutBlock3, checkbox3);
+displayBlock(aboutBlock4, checkbox4);
+displayBlock(aboutBlock5, checkbox5);
+-----------------------------------------------------------------------
+ChatGPT code:
+-----------------------------------------------------------------------
+const checkboxes = document.querySelectorAll('input[name="group1"]');
+const aboutBlocks = document.querySelectorAll('.about__block');
+
+function displayBlock(index) {
+  checkboxes.forEach((checkbox, i) => {
+    if (i !== index) {
+      checkbox.checked = false;
+      aboutBlocks[i].style.display = 'none';
+    }
+  });
+
+  const checkbox = checkboxes[index];
+  const aboutBlock = aboutBlocks[index];
+
+  checkbox.addEventListener('change', () => {
+    aboutBlock.style.display = checkbox.checked ? 'block' : 'none';
+  });
+}
+
+aboutBlocks.forEach((_, i) => {
+  displayBlock(i);
+});
